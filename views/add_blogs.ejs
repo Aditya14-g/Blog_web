@@ -1,0 +1,24 @@
+<%-include("partials/header.ejs")%>
+
+<div class="main-box">
+
+    <%-include("partials/navbar.ejs")%>
+
+    <div class="form-main">
+        <div class="Home-page">
+            <h1>Add Blogs</h1>
+        </div>
+        <form action="/add-blogs" method="POST">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+            <label for="content">Content</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>

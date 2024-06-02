@@ -1,0 +1,30 @@
+<%-include("partials/header.ejs")%>
+
+<div class="main-box">
+
+    <%-include("partials/navbar.ejs")%>
+
+    <div class="box1">
+        <div class="Blog">
+            <h1>Blog</h1>
+        </div>
+        <form action="/Blog" method="POST">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+            <button type="submit">Submit</button>
+        </form>
+   
+        <% if(locals.t&&locals.c){%>
+            <h1 class="Home-page"><%= t %></h1>
+            <p><%= c %></p>
+            <p>thank you</p>
+        <%}%>
+        <p>thank you</p>
+        
+    </div>
+
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
